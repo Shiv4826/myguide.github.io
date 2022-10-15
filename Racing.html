@@ -1,0 +1,215 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            
+            box-shadow: 0px 0px 2px 5px gray;
+            position: relative;
+           
+           
+
+        }
+        .sun{
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255,165,0,1);
+        border-radius: 50%;
+        position: absolute;
+        left: -10px;
+        bottom: 200px;
+        
+        box-shadow: 0px 0px 5px 2px rgba(255,165,0,0.8);
+        overflow: hidden;
+        animation:sun 8s infinite ease-in-out;
+        animation-direction: forwards;
+        animation-delay: 3s;
+
+        
+
+        }
+        .car1{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            bottom: 50px;
+            left:100px;
+            opacity: 0.5;
+           
+         
+           
+            animation:car1 5s infinite linear;
+            animation-delay: 5s;
+            animation-direction: alternate-reverse;
+            
+            
+        }
+        .car2{
+            height: 50px;
+            width: 100px;
+            bottom:50px;
+            left: 0px;
+            position: absolute;
+            opacity: 0.7;
+            animation: car2 3s infinite linear;
+            animation-delay: 5s;
+            animation-direction: forwards;
+           
+           
+          
+            
+        }
+        .car3{
+            height: 50px;
+            width:100px;
+            position: absolute;
+            left: 300px;
+            bottom:50px;
+            animation:car3 5s infinite ease-in-out;
+            animation-delay: 5s;
+            animation-direction: alternate;
+           
+
+
+        }
+        @keyframes sun{
+            from{
+                    left: -10px;
+                   bottom: 200px;
+                   
+                 box-shadow: 0px 0px 5px 2px rgba(255,165,0,0.8);
+
+            }
+            to{
+                left: 200px;
+               bottom: 300px;
+               
+                box-shadow: 0px 0px 5px 10px rgba(255,165,0,0.8);
+
+            }
+        }
+        @keyframes car1{
+            from{
+            bottom: 50px;
+            left:100px;
+            opacity: 0.5;
+
+            }
+            to{
+                bottom:50px;
+                left:600px;
+                opacity: 1;
+
+            }
+        }
+        @keyframes car2{
+
+            from{
+            bottom:50px;
+            left: 0px;
+            opacity: 0.7;
+            
+                
+            }
+            to{
+                bottom:50px;
+                left: 700px;
+                opacity: 1;
+
+            }
+        }
+        @keyframes car3{
+            from{
+            left: 300px;
+            bottom:50px;
+
+            }
+            to{
+                bottom:50px;
+                left:600px;
+            }
+        }
+        .Start{
+            height: 25px;
+            width: 50px;
+            position: absolute;
+            left: 400px;
+            padding: 2px;
+            top:90px;
+          
+            background-color:aquamarine;
+            cursor: pointer;
+            box-shadow: 0px 0px 2px 2px gray;
+            
+
+            
+        }
+        .audio{
+            width:100px;
+            height: 25px;
+            position: absolute;
+            left: 500;
+            top: 90px;
+            box-shadow:0px 0px 2px 5px gray; 
+            border-radius: 50%;
+        }
+        .Start:hover{
+            background-color: aqua;
+        }
+        .audio:hover{
+            background-color:black;
+        }
+
+
+    </style>
+</head>
+<body>
+  
+    
+   <div class="container">
+    
+    
+    <div class="sun">
+           
+            
+    </div>
+    
+        <input type="button" name="" value="Start" class="Start">
+        <audio controls="" loop=""  class="audio">
+    <source src="https://filesamples.com/samples/audio/ogg/Symphony%20No.6%20(1st%20movement).mp3" type="audio/mp3">
+                        
+                        
+            </audio>
+   
+ 
+    <div class="road">
+        <img src="road2.jpg" alt="" height="100%" width="100%">
+
+
+    </div>
+    <div class="car1">
+        <img src="car_1.png" alt="" height="100%" width="100%">
+
+
+    </div>
+    <div class="car2">
+        <img src="car_2.png" alt="" height="100%" width="100%">
+
+    </div>
+    <div class="car3">
+        <img src="car_3.png" alt="" height="100%" width="100%">
+
+    </div>
+   </div>
+    
+</body>
+</html>
